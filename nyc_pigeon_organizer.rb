@@ -5,6 +5,11 @@ def nyc_pigeon_organizer(data)
   pigeon_list = {}
   attribute= {}
 
+data.each_with_object({}) do |(key, value), pigeon_list|
+  value.each do |inner_key, names|
+    
+    
+    
   data.each do |key,item|
     attribute[key]= []
     #binding.pry
