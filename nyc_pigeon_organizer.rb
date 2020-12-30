@@ -16,7 +16,8 @@ def nyc_pigeon_organizer(data)
           if !pigeon_list[name][key]
             pigeon_list[name][key]=[]
           end
-          
+          attribute_s=key2.to_s
+          if pigeon_list[name][key].include?
           binding.pry
         end
       end
