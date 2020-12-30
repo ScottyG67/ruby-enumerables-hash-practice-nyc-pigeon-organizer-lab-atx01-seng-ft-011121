@@ -1,6 +1,6 @@
 def nyc_pigeon_organizer(data)
-   require "pry"
   # write your code here!
+  
   require "pry"
   pigeon_list = {}
   attribute= {}
