@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
       attribute_hash.each do |attribute,names_array|
         #binding.pry
         names_array.each do |name|
-          binding.pry
+          #binding.pry
           if !pigeon_list[name]
             pigeon_list[name] ={}
           end
