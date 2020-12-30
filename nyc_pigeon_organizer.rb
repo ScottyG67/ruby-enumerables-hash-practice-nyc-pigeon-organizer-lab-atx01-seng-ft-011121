@@ -25,6 +25,8 @@ binding.pry
   attribute_types_hash = Hash[attribute_types_array.collect { |item| [item, [] ] }]
   #binding.pry
 
+
+  pigeon_list["Theo"][attribute_types_array[0]] =[]
       
 i=0
 length = attribute_types_array.length
