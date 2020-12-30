@@ -1,12 +1,7 @@
 def nyc_pigeon_organizer(data)
    require "pry"
-array = [:key2]
-hash = {}
-hash[:key] ={}
-hash[:key][array[0]] = []
-binding.pry
   # write your code here!
-
+  require "pry"
   pigeon_list = {}
   attribute= {}
 
