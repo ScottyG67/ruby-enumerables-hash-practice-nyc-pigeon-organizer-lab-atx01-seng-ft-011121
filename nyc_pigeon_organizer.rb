@@ -5,11 +5,11 @@ def nyc_pigeon_organizer(data)
 
     
     data.each_with_object({}) do |(key,item),pigeon_list|
-      binding.pry
+      #binding.pry
       item.each do |key2,names|
-        binding.pry
+        #binding.pry
         names.each do |name|
-          binding.pry
+          #binding.pry
           if !pigeon_list[name]
             pigeon_list[name] ={}
           end
