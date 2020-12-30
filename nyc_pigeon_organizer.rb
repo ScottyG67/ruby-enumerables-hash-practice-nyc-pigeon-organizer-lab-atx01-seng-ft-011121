@@ -20,43 +20,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   binding.pry
-  
-  attribute_types_array = data.keys
-  attribute_types_hash = Hash[attribute_types_array.collect { |item| [item, [] ] }]
-  #binding.pry
 
-
-  
-      
-i=0
-length = attribute_types_array.length
-binding.pry
-
-  while i < length do
-    binding.pry
-    pigeon_list.each do |name|
-      binding.pry
-      pigeon_list[name][attribute_types_array[i]] =[]
-    end
-    i+=1
-  end
-
-
-  #    binding.pry
-  #    pigeon_list[name][attribute_type] = []
-  #  end
-  #end
-  
-binding.pry
-#pigeon_list["Theo"] = attribute
-#binding.pry
-#  pigeon_list.each do |name,item|
-#    pigeon_list[name] = pigeon_list[name].merge(attribute_types_hash)
-#  end
-binding.pry
-pigeon_list["Theo"][:lives] << "male"
-pigeon_list["Alex"][:lives] << "notmale"
-binding.pry
 
 data.each do |attribute_type,attribute_hash|
   binding.pry
