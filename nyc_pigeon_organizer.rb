@@ -11,9 +11,12 @@ def nyc_pigeon_organizer(data)
           if !pigeon_list[name]
             pigeon_list[name] ={}
           end
+          if !pigeon_list[name][key]
+            pigeon_list[name][key]=[]
+          end
         end
       end
-  
+  binding.pry
   
   attribute_types_array = data.keys
   attribute_types_hash = Hash[attribute_types_array.collect { |item| [item, [] ] }]
