@@ -24,25 +24,5 @@ def nyc_pigeon_organizer(data)
         end
       end
     end
-  binding.pry
-
-
-data.each do |attribute_type,attribute_hash|
-  binding.pry
-  pigeon_list.each do |name,new_attribute_hash|
-    binding.pry
-    data[attribute_type].each do |old_attribute, name_array| 
-        binding.pry
-        value = name_array.any? {|string| string == name}
-        if value then
-          binding.pry
-
-          #pigeon_list[name][attribute_type] << attribute.to_s
-          binding.pry
-        end
-    end
-  end
-end
-
 pigeon_list
 end
