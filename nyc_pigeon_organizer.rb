@@ -2,21 +2,17 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   
   require "pry"
-  pigeon_list = {}
-  attribute= {}
 
     
-    
-    
   data.each_with_object do |(key,item),pigeon_list|
-    attribute[key]= []
     #binding.pry
       item.each do |key2,item2|
         item2.each do |name|
-          pigeon_list[name] = {}
+          if !pigeon_list[name]
+            pigeon_list[name] ={}
+          end
         end
       end
-  end
   
   
   attribute_types_array = data.keys
