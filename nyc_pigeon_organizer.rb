@@ -33,8 +33,7 @@ pigeon_list.each do |name|
   binding.pry
   while i < length do
     binding.pry
-    value = attribute_types_array(i)
-    pigeon_list[name][value]=[]
+    pigeon_list[name][attribute_types_array[i]]=[]
     i+=1
   end
 end
@@ -47,8 +46,8 @@ end
 binding.pry
 #pigeon_list["Theo"] = attribute
 #binding.pry
-  pigeon_list.each do |name,item|
-    pigeon_list[name] = pigeon_list[name].merge(attribute_types_hash)
+#  pigeon_list.each do |name,item|
+#    pigeon_list[name] = pigeon_list[name].merge(attribute_types_hash)
   end
 binding.pry
 pigeon_list["Theo"][:lives] << "male"
