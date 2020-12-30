@@ -35,7 +35,7 @@ pigeon_list.each do |name|
   binding.pry
   while i < length do
     binding.pry
-    pigeon_list[name][attribute_types_array[i]]
+    pigeon_list[name][attribute_types_array[i]] =[]
     i+=1
   end
 end
