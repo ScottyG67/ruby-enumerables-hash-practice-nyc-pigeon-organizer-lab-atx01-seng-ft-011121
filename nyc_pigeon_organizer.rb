@@ -26,19 +26,21 @@ binding.pry
   #binding.pry
 
 
-  pigeon_list["Theo"][attribute_types_array[0]] =[]
+  
       
 i=0
 length = attribute_types_array.length
 binding.pry
-pigeon_list.each do |name|
-  binding.pry
+
   while i < length do
     binding.pry
-    pigeon_list[name][attribute_types_array[i]] =[]
+    pigeon_list.each do |name|
+      binding.pry
+      pigeon_list[name][attribute_types_array[i]] =[]
+    end
     i+=1
   end
-end
+
 
   #    binding.pry
   #    pigeon_list[name][attribute_type] = []
