@@ -4,21 +4,20 @@ def nyc_pigeon_organizer(data)
   require "pry"
 
     
-    pigeon_list_final = data.each_with_object({}) do |(attribute_type,item),pigeon_list|
+    pigeon_list_final = data.each_with_object({}) do |(attribute_type,attribute_hash),pigeon_list|
       #binding.pry
-      item.each do |key2,names|
+      attribute_hash.each do |attribute,names_array|
         #binding.pry
-        names.each do |name|
+        names_array.each do |name|
           binding.pry
           if !pigeon_list[name]
             pigeon_list[name] ={}
           end
-          if !pigeon_list[name][key]
-            pigeon_list[name][key]=[]
+          if !pigeon_list[name][attribute_type]
+            pigeon_list[name][attribute_type]=[]
           end
-          attribute_s=key2.to_s
-          if !pigeon_list[name][key].include?(attribute_s)
-            pigeon_list[name][key] << attribute_s
+          if !pigeon_list[name][attribute_type].include?(attribute.to_s)
+            pigeon_list[name][attribute_type] << attribute_s
           end
           #binding.pry
         end
