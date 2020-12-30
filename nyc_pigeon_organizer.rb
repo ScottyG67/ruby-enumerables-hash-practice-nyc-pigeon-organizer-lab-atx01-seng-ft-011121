@@ -48,7 +48,7 @@ binding.pry
 #binding.pry
 #  pigeon_list.each do |name,item|
 #    pigeon_list[name] = pigeon_list[name].merge(attribute_types_hash)
-  end
+#  end
 binding.pry
 pigeon_list["Theo"][:lives] << "male"
 pigeon_list["Alex"][:lives] << "notmale"
