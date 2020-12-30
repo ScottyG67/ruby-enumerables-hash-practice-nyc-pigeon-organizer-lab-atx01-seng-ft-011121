@@ -3,7 +3,7 @@ def nyc_pigeon_organizer(data)
 array = [:key2]
 hash = {}
 hash[:key] ={}
-hash[:key][array[0]] = {}
+hash[:key][array[0]] = []
 binding.pry
   # write your code here!
 
