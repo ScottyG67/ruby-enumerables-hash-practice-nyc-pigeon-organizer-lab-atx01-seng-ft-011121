@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   require "pry"
 
     
-    data.each_with_object do |(key,item),pigeon_list|
+    data.each_with_object({}) do |(key,item),pigeon_list|
     #binding.pry
       item.each do |key2,names|
         names.each do |name|
