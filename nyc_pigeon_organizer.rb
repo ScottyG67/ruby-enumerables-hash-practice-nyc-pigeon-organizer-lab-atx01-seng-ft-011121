@@ -17,7 +17,7 @@ def nyc_pigeon_organizer(data)
             pigeon_list[name][attribute_type]=[]
           end
           if !pigeon_list[name][attribute_type].include?(attribute.to_s)
-            pigeon_list[name][attribute_type] << attribute_s
+            pigeon_list[name][attribute_type] << attribute.to_s
           end
           #binding.pry
         end
