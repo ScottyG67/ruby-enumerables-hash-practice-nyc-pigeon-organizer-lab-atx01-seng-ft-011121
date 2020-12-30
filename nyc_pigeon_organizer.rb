@@ -1,9 +1,9 @@
 def nyc_pigeon_organizer(data)
    require "pry"
-
-array = {}
-array[:key] ={}
-array[:key][:key2] = {}
+array = [:key2]
+hash = {}
+hash[:key] ={}
+hash[:key][array[0]] = {}
 binding.pry
   # write your code here!
 
